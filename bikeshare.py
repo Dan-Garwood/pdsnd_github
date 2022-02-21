@@ -652,6 +652,7 @@ def main():
         h_div(upper_nl=1, lower_nl=1)
         view_raw(df)
 
+        # Ask the user whether to restart the program.
         h_div(upper_nl=1, lower_nl=1)
         restart_prompt = wrap('Would you like to restart? Yes or No (Y/N):') \
                          + '\n> '
