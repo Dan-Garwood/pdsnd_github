@@ -13,6 +13,9 @@ Bikeshare is the project for the Python unit in Udacity's "Programming for Data 
 * new_york_city.csv
 * washington.csv
 
+### Installation
+Save bikeshare.py to a directory that also includes the chicago.csv, new_york_city.csv, and washington.csv files provided by Udacity.
+
 ### Credits
 The following sources were referenced in writing this script.
 
