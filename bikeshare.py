@@ -179,11 +179,9 @@ def partial_match(str_, list_, dedupe=True):
 
     # If there is only one match, assign the match to the return variable.
     if len(matches) == 1:
-        match = matches[0]
+        return matches[0]
     else:
-        match = None
-
-    return match
+        return None
 
 
 def lev_best(str_, list_, ratio_calc=False):
