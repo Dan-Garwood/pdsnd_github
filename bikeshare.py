@@ -71,7 +71,7 @@ def y_n_query(input_prompt='Yes or No? ',
         error_prompt (str): The prompt if the input is not accepted
 
     Returns:
-        y_or_n (str): Returns 'yes' or 'no' depending on the user's input
+        (str): Returns 'yes' or 'no' depending on the user's input
     """
     y_or_n = input(input_prompt).lower()
 
@@ -79,11 +79,9 @@ def y_n_query(input_prompt='Yes or No? ',
         y_or_n = input(error_prompt).lower()
 
     if y_or_n in {'n', 'no'}:
-        y_or_n = 'no'
+        return 'no'
     else:
-        y_or_n = 'yes'
-
-    return y_or_n
+        return 'yes'
 
 
 # We will use the Levenshtein Ratio to correct for mistyped input. This code
@@ -181,11 +179,9 @@ def partial_match(str_, list_, dedupe=True):
 
     # If there is only one match, assign the match to the return variable.
     if len(matches) == 1:
-        match = matches[0]
+        return matches[0]
     else:
-        match = None
-
-    return match
+        return None
 
 
 def lev_best(str_, list_, ratio_calc=False):
